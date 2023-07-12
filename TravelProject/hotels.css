@@ -1,0 +1,241 @@
+main{
+    background-color: #545e72;
+}
+
+
+
+.logo{
+    width: 5px;
+    height: 5px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-section {
+    width: 70%;
+    display: block;
+    margin-top: 50px;
+    margin: 100px auto;
+}
+
+.hotel-description h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#picture {
+    display: inline-block !important;
+    width: 40% !important;
+    height: 100%;
+}
+
+#picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-md-8 {
+    float: right;
+    width: 55% !important;
+    height: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.card-body h5 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.card-body p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.card-text {
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.card-text i {
+    margin: 0 0.5rem;
+}
+
+.button {
+	min-width: 150px;
+	max-width: 250px;
+	display: inline-block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.button > span {
+	vertical-align: middle;
+}
+
+/* Sizes */
+.button--size-s {
+	font-size: 14px;
+}
+
+.button--size-m {
+	font-size: 16px;
+}
+
+.button--size-l {
+	font-size: 18px;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.button--text-thin {
+	font-weight: 300;
+}
+
+.button--text-medium {
+	font-weight: 500;
+}
+
+.button--text-thick {
+	font-weight: 600;
+}
+
+.button--round-s {
+	border-radius: 5px;
+}
+
+.button--round-m {
+	border-radius: 15px;
+}
+
+.button--round-l {
+	border-radius: 40px;
+}
+
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+
+.button--border-medium {
+	border: 2px solid;
+}
+
+.button--border-thick {
+	border: 3px solid;
+}
+
+/* Wayra */
+.button--wayra {
+    overflow: hidden;
+    width: 245px;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.button--wayra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: #37474f;
+    z-index: -1;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+.button--wayra:hover {
+    color: #fff;
+    border-color: #3f51b5;
+}
+
+.button--wayra:hover::before {
+    opacity: 1;
+    background-color: #3f51b5;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}

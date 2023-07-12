@@ -1,0 +1,9 @@
+.touch-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 5px;
+    height: 5px;
+}

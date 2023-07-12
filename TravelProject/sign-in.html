@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login</title>
+
+  <link rel="stylesheet" href="sign-in.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <div class="root">
+    <header>
+      <div class="logo"><img
+          src="https://lh3.googleusercontent.com/proxy/AAR39-xIPnmEACGWgXBNMuPTHoP00KFE-B6g0DAEIPgWbETZciUuJcfWUbrjXkX6RthY9PpSdWRhdnjf6LoeyLeHAVedbnitSVsqXw"
+          alt=""></div>
+      <div class="header">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="hotels.html">Hotels</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="auth-buttons js-guest" style="display: none;">
+          <a href="sign-in.html">Login</a>
+          <a href="registration.html">Register</a>
+        </div>
+
+        <div class="auth-buttons js-user" style="display: none;">
+          <span class="js-username"></span>
+          <button class="js-logout">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <form name="sign_in" style="margin-left: 542px;
+    margin-top: 50px;
+    margin-bottom: 50px;">
+      <div class="col_half">
+        <div class="input_field">
+          <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+          <input type="email" name="email" placeholder="Email" autofocus required />
+        </div>
+      </div>
+
+      <div class="col_half">
+        <div class="input_field">
+          <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+      </div>
+
+      <div class="sub-button">
+        <button class="submit">Login</button>
+      </div>
+    </form>
+
+    <h2 style="text-align: center;">Welcome To Our Website</h2>
+    <p style="text-align: center;">Please log in to get more functions</p>
+    <footer>
+      <p>&copy; Copyright © 2021– Travelmore™. All rights reserved.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script src="https://unpkg.com/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+    <script src="js/fb.js"></script>
+    <script src="sign-in.js"></script>
+</body>
+
+</html>
